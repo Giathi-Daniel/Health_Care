@@ -1,0 +1,46 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+/* ==============================*\
+            GENERAK STYLING
+/* ==============================*/
+:root {
+    --primary: #1F2E88;
+    --secondary: #2F66D4;
+    --hover: #A2D9F5;
+    --black: #333;
+    --white: #FFF;
+    --light-color: #666666;
+    --light-bg: #EEE;
+    --border: .2rem solid rgba(0, 0,0 ,0.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    inline-size: .8rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5rem;
+}
