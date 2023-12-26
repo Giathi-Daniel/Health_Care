@@ -22,6 +22,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    text-decoration: none;
     border: none;
     text-transform: capitalize;
     transition: .2s linear;
@@ -49,3 +50,27 @@ html::-webkit-scrollbar-thumb {
 /* ==============================*\
             HEADER STYLING
 /* ==============================*/
+.header {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    z-index: 999999;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .logo i {
+    color: var(--primary);
+    padding-inline-end: .5rem;
+}
