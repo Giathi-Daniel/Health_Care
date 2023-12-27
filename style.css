@@ -49,7 +49,7 @@ html::-webkit-scrollbar-thumb {
 
 /* ==============================*\
             HEADER STYLING
-/* ==============================*/
+\* ==============================*/
 .header {
     position: fixed;
     inset-block-start: 0;
@@ -63,7 +63,6 @@ html::-webkit-scrollbar-thumb {
     justify-content: space-between;
     padding: 2rem 9%;
 }
-
 .header .logo {
     font-size: 2.5rem;
     line-height: 1;
@@ -74,3 +73,9 @@ html::-webkit-scrollbar-thumb {
     color: var(--primary);
     padding-inline-end: .5rem;
 }
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+.header .navbar align-self: hover;
