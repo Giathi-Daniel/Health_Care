@@ -280,7 +280,7 @@ section {
 .pricing .box-container .box {
     block-size: 46rem;
     inline-size: 30rem;
-    margin: 2rem 4rem;
+    margin: 2rem 1rem;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     text-align: center;
