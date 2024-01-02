@@ -45,7 +45,30 @@ html::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: 5rem;
 }
-
+section {
+    padding: 5rem 7%;
+}
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+.btn {
+    margin-block-start: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    background: var(--primary);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+.btn:hover {
+    background: var(--secondary);
+}
 
 /* ==============================*\
             HEADER STYLING
@@ -78,4 +101,165 @@ html::-webkit-scrollbar-thumb {
     color: var(--black);
     margin: 0 1rem;
 }
-.header .navbar align-self: hover;
+.header .navbar a:hover {
+    color: var(--primary);
+}
+.header .btn {
+    margin-top: 0;
+}
+#menu-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    margin-inline-start: 1.7rem;
+}
+#menu-btn:hover {
+    color: var(--primary);
+}
+
+
+/* ==============================*\
+            HERO STYLING
+\* ==============================*/
+.home {
+    min-block-size: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("./images/home.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content {
+    max-inline-size: 60rem;
+    padding-left: 6rem;
+    padding-top: 10rem;
+}
+.home .content h3 {
+    font-size: 6rem ;
+    color: var(--black);
+    line-height: 1.2;
+}
+.home .content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+
+/* ==============================*\
+            ABOUT US STYLING
+\* ==============================*/
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.about .row .image {
+    flex: 1 1 40rem;
+}
+.about .row .image img {
+    inline-size: 100%;
+    block-size: 100%;
+}
+.about .row .content {
+    flex: 1 1 40rem;
+}
+.about .row .content h3 {
+    color: var(--black);
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.about .row .content p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+/* ==============================*\
+            SERVICES STYLING
+\* ==============================*/
+.services {
+    background: var(--light-bg);
+}
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+.services .box-container .box {
+    padding: 4rem;
+    text-align: center;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+}
+.services .box-container .box:hover {
+    background: var(--hover);
+}
+.services .box-container .box img{
+    margin: 1rem 0;
+    block-size: 10rem;
+}
+.services .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+.services .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+} 
+
+
+/* ==============================*\
+            SERVICES STYLING
+\* ==============================*/
+.team .slide {
+    text-align: center;
+}
+.team .slide .image {
+    position: relative;
+    overflow: hidden;
+}
+.team .slide .image img {
+    inline-size: 100%;
+}
+.team .slide .image .share {
+    padding: 2rem;
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0,0 ,0.1);
+}
+.team .slide:hover .image .share {
+    bottom: 0;
+}
+.team .slide .image .share a {
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: var(--white);
+}
+.team .slide .image .share a:hover {
+    color: var(--secondary);
+} 
+.team .slide .content {
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.team .slide .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+.team .slide .content span {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--light-color);
+}
